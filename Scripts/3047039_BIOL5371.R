@@ -7,13 +7,13 @@ library(ggthemes)
 library(ggfortify)
 
 #PART 1: Parsing Files
-
+"../data/yourdatafile.csv"
 #Reading Input Files
-anno = read.table("C:/DATA/Glasgow/Academics/Statsistics for Bioinformatics/3 Labs/Data for Report Assessment-20241003/Annotations.csv", header=TRUE, row.names=1, sep="\t")
-deGoutHc = read.table("C:/DATA/Glasgow/Academics/Statsistics for Bioinformatics/3 Labs/Data for Report Assessment-20241003/DE_GOUT_vs_HC.csv", header=TRUE, row.names=1, sep="\t")
-deSaHc = read.table("C:/DATA/Glasgow/Academics/Statsistics for Bioinformatics/3 Labs/Data for Report Assessment-20241003/DE_SA_vs_HC.csv", header=TRUE, row.names=1, sep="\t")
-sampleInfo = read.table("C:/DATA/Glasgow/Academics/Statsistics for Bioinformatics/3 Labs/Data for Report Assessment-20241003/Sample_Information.csv", header=TRUE, row.names=1, sep="\t")
-exp =data.frame(t ( read.table("C:/DATA/Glasgow/Academics/Statsistics for Bioinformatics/3 Labs/Data for Report Assessment-20241003/Expression_Table.csv", header=TRUE, row.names=1, sep="\t")))
+anno = read.table("../data/Annotations.csv", header=TRUE, row.names=1, sep="\t")
+deGoutHc = read.table("../data/DE_GOUT_vs_HC.csv", header=TRUE, row.names=1, sep="\t")
+deSaHc = read.table("../data/DE_SA_vs_HC.csv", header=TRUE, row.names=1, sep="\t")
+sampleInfo = read.table("../data/Sample_Information.csv", header=TRUE, row.names=1, sep="\t")
+exp =data.frame(t ( read.table("../data/Expression_Table.csv", header=TRUE, row.names=1, sep="\t")))
 
 #merging the two differential gene expression files
 deMerged = merge(deGoutHc, deSaHc, by=0)
@@ -175,10 +175,8 @@ for (gene in seq(1:8))
 
     xlab("Groups")+
     ylab(paste("Log( ", anno[deMergedSig$GeneID[gene],1], ") Expression"))+
-    ggtitle(paste("Log( ", anno[deMergedSig$GeneID[gene],1], ") Expression vs Sample Groups"))+
+    ggtitle(paste("Log(", anno[deMergedSig$GeneID[gene],1], ") Expression vs Sample Groups"))+
 
     theme_economist()
   print(plot)
 }
-
-
