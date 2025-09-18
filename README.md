@@ -20,7 +20,7 @@ The following data files are required for this analysis:
 - Sample summary: 9 samples per group; sex ratio ≈ 1:1. Mean neutrophils — **Sepsis: 12.78**, **Gout: 7.48**, **Healthy: 5.04**.
 
 - Significant differentially expressed genes: **15** (Gout), **296** (Septic Arthritis).  
-- Shared significant genes (8): **MYO3B, SPP1, GATD3A, PCP2, KLHDC7A, EGFL6*** and ***RPL35P5**.  
+- Shared significant genes (8): **MYO3B, SPP1, GATD3A, PCP2, KLHDC7A, EGFL6** and **RPL35P5**.  
   
 - General Linear models showed that there was no significant difference in neutrophil count and patient sex across disease groups.  
 - A hypergeometric test (p= **5.2e-13**) showed significant overepresentation of shared genes between the two diseases.  
