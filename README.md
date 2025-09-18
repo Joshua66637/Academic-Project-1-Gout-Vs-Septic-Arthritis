@@ -1,5 +1,5 @@
 # Project Title: Differential Gene Expression Analysis
-# Course: Statistics and Data Analysis for Bioinformatics (MSc Bioinformatics)
+## Course: Statistics and Data Analysis for Bioinformatics (MSc Bioinformatics)
 
 ## Description
 Arthritis refers to any disorder causing inflammation in the joints of patients. Gout is a common type of arthritis that occurs due to the precipitation of monosodium urate in the joints as a result of hyperuricemia, leading to an autoimmune response and inflammation. The main genes involved in gout are related to the innate inflammatory pathways and neutrophil extracellular trapping. 
