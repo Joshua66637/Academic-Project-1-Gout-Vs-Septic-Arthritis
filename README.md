@@ -8,12 +8,12 @@ Septic arthritis occurs when the joint inflammation is due to bacterial invasion
 **Research Question:** Gout and Septic Arthritis exhibit many clinical symptoms in common, such as inflammation, fever, redness, and reduced movement in the affected joints. Even Gram staining and the presence of monosodium urate crystals cannot reliably exclude infection due to their high false positive rate. Given the rapid spread and potential lethality of septic arthritis, it is advisable to consider alternative diagnostic methods, such as the analysis of bulk RNAseq data. This simple project performs a differential gene expression analysis to differentiate Gout and Septic Arthritis (SA).
 
 ## Data Files
-The following data files are required for this analysis:
+The following data files are required for this analysis and need to be present in the data directory:
 - `Annotations.csv`: Contains gene annotations.
 - `DE_GOUT_vs_HC.csv`: Differential expression results for Gout vs Healthy Control.
 - `DE_SA_vs_HC.csv`: Differential expression results for SA vs Healthy Control.
 - `Sample_Information.csv`: Information about the samples used.
-- `Expression_Table.csv`: Gene expression matrix.
+- `Expression_Table.csv`: Gene expression matrix (Samples as columns and genes as rows).
 
 ## Results
 
